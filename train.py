@@ -1,6 +1,4 @@
-from model import create_seq2seq_model
 from preprocessing import preprocess_texts, load_and_split_data
-import tensorflow as tf
 
 def train_model(file_path):
     train_data, val_data, _ = load_and_split_data(file_path)
